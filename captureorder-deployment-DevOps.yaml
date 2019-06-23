@@ -36,10 +36,10 @@ spec:
           - name: TEAMNAME
             value: "team-JCG"
           - name: MONGOHOST
-            value: "$(mongoHost)"
+            value: "#{mongoHost}#"
           - name: MONGOUSER
-            value: "$(mongoUser)"
+            value: "#{mongoUser}#"
           - name: MONGOPASSWORD
-            value: "$(mongoPassword)"
+            value: "#{mongoPassword}#"
           ports:
           - containerPort: 8080
