@@ -36,10 +36,10 @@ spec:
           - name: TEAMNAME
             value: "team-JCG"
           - name: MONGOHOST
-            value: "#{captureorder-variables.mongoHost}#"
+            value: "$(captureorder-variables.mongoHost)"
           - name: MONGOUSER
-            value: "#{captureorder-variables.mongoUser}#"
+            value: "$(captureorder-variables.mongoUser)"
           - name: MONGOPASSWORD
-            value: "#{captureorder-variables.mongoPassword}#"
+            value: "$(captureorder-variables.mongoPassword)"
           ports:
           - containerPort: 8080
